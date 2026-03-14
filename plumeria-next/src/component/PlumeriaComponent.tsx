@@ -1,6 +1,6 @@
-import * as css from "@plumeria/core";
+import * as style from "@plumeria/core";
 
-const styles = css.create({
+const styles = style.create({
   base: {
     padding: "8px",
     fontSize: "16px",
@@ -13,7 +13,7 @@ const styles = css.create({
     borderColor: "red",
   },
 });
-const styles2 = css.create({
+const styles2 = style.create({
   container: {
     marginBottom: "0.5rem",
     ":last-child": {
@@ -32,13 +32,13 @@ type PlumeriaComponentProps = {
 const PlumeriaComponent = ({ isRed }: PlumeriaComponentProps) => {
   return (
     <>
-      <div className={css.use(styles.base, isRed && styles.red)}>
+      <div className={style.use(styles.base, isRed && styles.red)}>
         Hello from Plumeria!
       </div>
       <div>
-        <div className={css.use(styles2.container)}>First</div>
-        <div className={css.use(styles2.container)}>Second</div>
-        <div className={css.use(styles2.container)}>Last</div>
+        <div className={style.use(styles2.container)}>First</div>
+        <div className={style.use(styles2.container)}>Second</div>
+        <div className={style.use(styles2.container)}>Last</div>
       </div>
     </>
   );
