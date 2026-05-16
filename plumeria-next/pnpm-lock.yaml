@@ -19,17 +19,17 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@plumeria/core':
-        specifier: ^10.5.3
-        version: 10.5.3
+        specifier: ^11.2.1
+        version: 11.2.1
       '@plumeria/eslint-plugin':
-        specifier: ^10.5.3
-        version: 10.5.3
+        specifier: ^11.2.1
+        version: 11.2.1(eslint@9.39.2)(typescript@5.9.3)
       '@plumeria/next-plugin':
-        specifier: ^10.5.3
-        version: 10.5.3
+        specifier: ^11.2.1
+        version: 11.2.1
       '@plumeria/postcss-plugin':
-        specifier: ^10.5.3
-        version: 10.5.3
+        specifier: ^11.2.1
+        version: 11.2.1
       '@types/node':
         specifier: ^24.8.1
         version: 24.10.4
@@ -59,6 +59,12 @@ packages:
 
   '@eslint-community/eslint-utils@4.9.0':
     resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
+
+  '@eslint-community/eslint-utils@4.9.1':
+    resolution: {integrity: sha512-phrYmNiYppR7znFEdqgfWHXR6NCkZEK7hwWDHZUjit/2/U0r6XvkDl0SYnoM51Hq7FhCGdLDT6zxCCOY1hexsQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -363,27 +369,27 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@plumeria/compiler@10.5.3':
-    resolution: {integrity: sha512-38PMztD/MW3JbxMbkVXN8ArQdKeBoZfbGxNghUGeZgrjVxNB2C/6hoTm9D3X5iw4c9/Xzyd+g9ZEfF0ao/gYOQ==}
+  '@plumeria/compiler@11.2.1':
+    resolution: {integrity: sha512-OiMcNzDZcXmFmTiqH+LLhTnDz1MGX0OedB1FvRfLbZKJW8ag+4ezWTAlBNT3LIm+czR1YqO6qHyuyxiciGH/0w==}
 
-  '@plumeria/core@10.5.3':
-    resolution: {integrity: sha512-pAQ018WcQ1S+8mzg2EyPkUzfCnv7bxLSPWOtVZVjUuULhbzCJstfXI8SpoipU5DqGjdEwaqqRRd8Pr/9nMxwTg==}
+  '@plumeria/core@11.2.1':
+    resolution: {integrity: sha512-5ilrWd7X/ZwFkMvUSs6O9lrPaJgW2Y8qdoz17eGhr2I56xFiCct3hxFK3FjSRy6z8DJ17ac+GUmgCUvVg16usA==}
 
-  '@plumeria/eslint-plugin@10.5.3':
-    resolution: {integrity: sha512-EZQtm0QIJyspbRkLUCHuYsivp9wSRMSAlBYzqYo2jsj41wZkR4/eyoUud7NmnSeQnEZp6svuX7uQ7DfGLwRnqA==}
+  '@plumeria/eslint-plugin@11.2.1':
+    resolution: {integrity: sha512-bYAQ/HBKTLi4TTZ14+e5HGG9bdFrAQeLHv50IAURY9Rb/V3i5JEJ8tIakBNWX4ImeCiI/rdM1PsklRgJCVVIFQ==}
     hasBin: true
 
-  '@plumeria/next-plugin@10.5.3':
-    resolution: {integrity: sha512-fFUX8KF3UkNBjnVMfrvvNAFgIehe5jc0ZxO5TiRxyD13ffxVG4mUe7dpFfvCRzLzMlZ99UW1NmnCFxNyXH1ZGQ==}
+  '@plumeria/next-plugin@11.2.1':
+    resolution: {integrity: sha512-31feC6jaCYZkOshkO775NLPzJXrYjkbiSWst2oQZzQQ0IdNNRpQFBy9Kl+kYqQXaWTmHvy2SmmSH1b2a89berQ==}
 
-  '@plumeria/postcss-plugin@10.5.3':
-    resolution: {integrity: sha512-mEDmesz2e7pP9lEawJLOTfhDuL07Dnimb0/A04uwHAWQ8p1IO+qO8xWgZM+ZLOCSQP/mKcneYyQYfPf2Ke6MJw==}
+  '@plumeria/postcss-plugin@11.2.1':
+    resolution: {integrity: sha512-kUDnK/aYEO55apkacmGJFc4iuJFXY+ZTVYN1LbiVCB0QG9mGgUIWE5CN3hAOtWrLOORX2mvZrhPNZqgzPhMWEQ==}
 
-  '@plumeria/turbopack-loader@10.5.3':
-    resolution: {integrity: sha512-fAl5RHNRfshyhLJ1qV8Zl8eruWgdZIBXG1kKh5gtnB8WiQtHQTg/kFFujMIWkPUV9rzUEXyLBDFvWYkS0LsXjg==}
+  '@plumeria/turbopack-loader@11.2.1':
+    resolution: {integrity: sha512-NnBFwanqgrXt4N4/vhWCGm90wdNoLOJjT2S73c0V5XXNPIdNCuQgSyteX2uRwe06vSX5YnZxwOk5QMDEms3Pew==}
 
-  '@plumeria/utils@10.5.3':
-    resolution: {integrity: sha512-7m5WhI3658DDkT7nE5Q7cDBesbeS7ultxODJaYU1b1RJrO4E0B2v1zkyqAXj/tzsi2BLdbRYDAZUoHH2I2rfTQ==}
+  '@plumeria/utils@11.2.1':
+    resolution: {integrity: sha512-zzaO3uvAdJE7CkqIBO9tVj0I3Pp/vTXphERHr7rnp8OWpr3NvNVYCOlUqP6e7x/Qq5Bgk/Efca4y3sHShS7ayw==}
 
   '@rust-gear/glob-darwin-arm64@1.0.0':
     resolution: {integrity: sha512-umbyvUthV9KNdoG4AuMEV/uBqZ45Nrt14IOq/PrjXxg45hj4EaSkYC+Yc4kK+KM09ABs1z15wLZ/nfvj57KqRA==}
@@ -560,6 +566,43 @@ packages:
   '@types/react@19.2.7':
     resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
+  '@typescript-eslint/project-service@8.59.3':
+    resolution: {integrity: sha512-ECiUWa/KYRGDFUqTNehaRgzDshnJfkTABJxVemHk4ko22gcr0ukloKjWvyQ64g8YCV/UI47kN1dbmjf/GaQYng==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/scope-manager@8.59.3':
+    resolution: {integrity: sha512-t2LvZnoEfzKtnPjgeEu41xw5gxq9mQVfYy4OoZ4Vlt0sk3JwxmhCca/AR7DwOiHrjWgjAj6as4AhRLKSDfvZIA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/tsconfig-utils@8.59.3':
+    resolution: {integrity: sha512-PcIJHjmaREXLgIAIzLnSY9VucEzz8FKXsRgFa1DmdGCK/5tJpW03TKJF01Q6VZd1lLdz2sIKPWaDUZN9dp//dw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/types@8.59.3':
+    resolution: {integrity: sha512-ePFoH0g4ludssdRFqqDxQePCxU4WQyRa9+XVwjm7yLn0FKhMeoetC+qBEEI1Eyb1pGSDveTIT09Bvw2WhlGayg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/typescript-estree@8.59.3':
+    resolution: {integrity: sha512-CbRjVRAf7Lr9Kr8RopKcbY45p2VfmmHrm0ygOCYFi7oU8q19m0Fs/6iHS7kNOmwpp+ob07ZVcAqlxUod9lYdmg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/utils@8.59.3':
+    resolution: {integrity: sha512-JAvT14goBzRzzzZyqq3P9BLArIxTtQURUtFgQ/V7FO+eU+Gg6ES+5ymOPP1wRxXcxAYeivCk4uS3jCKWI1K8Zg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/visitor-keys@8.59.3':
+    resolution: {integrity: sha512-f1UQF7ggd42YiwI5wGrRaPsa+P0CINBlrkLPmGfpq/u/I/oVtecoEIfFR9ag/oa1sLOsRNZ6xehf6qMZhQGBDg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
@@ -662,6 +705,10 @@ packages:
     resolution: {integrity: sha512-Uhdk5sfqcee/9H/rCOJikYz67o0a2Tw2hGRPOG2Y1R2dg7brRe1uG0yaNQDHu+TO/uQPF/5eCapvYSmHUjt7JQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  eslint-visitor-keys@5.0.1:
+    resolution: {integrity: sha512-tD40eHxA35h0PEIZNeIjkHoDR4YjjJp34biM0mDvplBe//mB+IHCqHDGV7pxF+7MklTvighcCPPZC7ynWyjdTA==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
   eslint@9.39.2:
     resolution: {integrity: sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -700,6 +747,15 @@ packages:
 
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
+
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      picomatch: ^3 || ^4
+    peerDependenciesMeta:
+      picomatch:
+        optional: true
 
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
@@ -950,6 +1006,10 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
+  picomatch@4.0.4:
+    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
+    engines: {node: '>=12'}
+
   postcss-combine-media-query@2.1.0:
     resolution: {integrity: sha512-lQOI5S1k0t7ha7krWly/y+io5sO3K2SlUv/ERvD276krQAMGpctMA3jB2whtv/7+OUQ8xxNwdDsVfwE3wcQtaQ==}
     engines: {node: '>=16.0.0'}
@@ -1035,6 +1095,16 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
+  tinyglobby@0.2.16:
+    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
+    engines: {node: '>=12.0.0'}
+
+  ts-api-utils@2.5.0:
+    resolution: {integrity: sha512-OJ/ibxhPlqrMM0UiNHJ/0CKQkoKF243/AEmplt3qpRgkW8VG7IfOS41h7V8TjITqdByHzrjcS/2si+y4lIh8NA==}
+    engines: {node: '>=18.12'}
+    peerDependencies:
+      typescript: '>=4.8.4'
+
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
@@ -1077,6 +1147,11 @@ snapshots:
     optional: true
 
   '@eslint-community/eslint-utils@4.9.0(eslint@9.39.2)':
+    dependencies:
+      eslint: 9.39.2
+      eslint-visitor-keys: 3.4.3
+
+  '@eslint-community/eslint-utils@4.9.1(eslint@9.39.2)':
     dependencies:
       eslint: 9.39.2
       eslint-visitor-keys: 3.4.3
@@ -1280,38 +1355,43 @@ snapshots:
   '@oxlint/win32-x64@1.35.0':
     optional: true
 
-  '@plumeria/compiler@10.5.3':
+  '@plumeria/compiler@11.2.1':
     dependencies:
-      '@plumeria/utils': 10.5.3
+      '@plumeria/utils': 11.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/core@10.5.3': {}
+  '@plumeria/core@11.2.1': {}
 
-  '@plumeria/eslint-plugin@10.5.3':
+  '@plumeria/eslint-plugin@11.2.1(eslint@9.39.2)(typescript@5.9.3)':
     dependencies:
+      '@typescript-eslint/utils': 8.59.3(eslint@9.39.2)(typescript@5.9.3)
       known-css-properties: 0.37.0
+    transitivePeerDependencies:
+      - eslint
+      - supports-color
+      - typescript
 
-  '@plumeria/next-plugin@10.5.3':
+  '@plumeria/next-plugin@11.2.1':
     dependencies:
-      '@plumeria/turbopack-loader': 10.5.3
+      '@plumeria/turbopack-loader': 11.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/postcss-plugin@10.5.3':
+  '@plumeria/postcss-plugin@11.2.1':
     dependencies:
-      '@plumeria/compiler': 10.5.3
+      '@plumeria/compiler': 11.2.1
       postcss: 8.5.6
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/turbopack-loader@10.5.3':
+  '@plumeria/turbopack-loader@11.2.1':
     dependencies:
-      '@plumeria/utils': 10.5.3
+      '@plumeria/utils': 11.2.1
     transitivePeerDependencies:
       - '@swc/helpers'
 
-  '@plumeria/utils@10.5.3':
+  '@plumeria/utils@11.2.1':
     dependencies:
       '@rust-gear/glob': 1.0.0
       '@swc/core': 1.15.21
@@ -1441,6 +1521,57 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
+  '@typescript-eslint/project-service@8.59.3(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/tsconfig-utils': 8.59.3(typescript@5.9.3)
+      '@typescript-eslint/types': 8.59.3
+      debug: 4.4.3
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/scope-manager@8.59.3':
+    dependencies:
+      '@typescript-eslint/types': 8.59.3
+      '@typescript-eslint/visitor-keys': 8.59.3
+
+  '@typescript-eslint/tsconfig-utils@8.59.3(typescript@5.9.3)':
+    dependencies:
+      typescript: 5.9.3
+
+  '@typescript-eslint/types@8.59.3': {}
+
+  '@typescript-eslint/typescript-estree@8.59.3(typescript@5.9.3)':
+    dependencies:
+      '@typescript-eslint/project-service': 8.59.3(typescript@5.9.3)
+      '@typescript-eslint/tsconfig-utils': 8.59.3(typescript@5.9.3)
+      '@typescript-eslint/types': 8.59.3
+      '@typescript-eslint/visitor-keys': 8.59.3
+      debug: 4.4.3
+      minimatch: 10.2.4
+      semver: 7.7.3
+      tinyglobby: 0.2.16
+      ts-api-utils: 2.5.0(typescript@5.9.3)
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/utils@8.59.3(eslint@9.39.2)(typescript@5.9.3)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.2)
+      '@typescript-eslint/scope-manager': 8.59.3
+      '@typescript-eslint/types': 8.59.3
+      '@typescript-eslint/typescript-estree': 8.59.3(typescript@5.9.3)
+      eslint: 9.39.2
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/visitor-keys@8.59.3':
+    dependencies:
+      '@typescript-eslint/types': 8.59.3
+      eslint-visitor-keys: 5.0.1
+
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
       acorn: 8.15.0
@@ -1521,6 +1652,8 @@ snapshots:
 
   eslint-visitor-keys@4.2.1: {}
 
+  eslint-visitor-keys@5.0.1: {}
+
   eslint@9.39.2:
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.39.2)
@@ -1583,6 +1716,10 @@ snapshots:
   fast-json-stable-stringify@2.1.0: {}
 
   fast-levenshtein@2.0.6: {}
+
+  fdir@6.5.0(picomatch@4.0.4):
+    optionalDependencies:
+      picomatch: 4.0.4
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -1794,6 +1931,8 @@ snapshots:
 
   picocolors@1.1.1: {}
 
+  picomatch@4.0.4: {}
+
   postcss-combine-media-query@2.1.0(postcss@8.5.6):
     dependencies:
       postcss: 8.5.6
@@ -1830,8 +1969,7 @@ snapshots:
 
   scheduler@0.27.0: {}
 
-  semver@7.7.3:
-    optional: true
+  semver@7.7.3: {}
 
   sharp@0.34.5:
     dependencies:
@@ -1883,6 +2021,15 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  tinyglobby@0.2.16:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
+
+  ts-api-utils@2.5.0(typescript@5.9.3):
+    dependencies:
+      typescript: 5.9.3
 
   tslib@2.8.1: {}
 
