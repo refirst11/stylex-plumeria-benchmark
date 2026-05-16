@@ -1,6 +1,6 @@
-import * as style from "@plumeria/core";
+import * as css from "@plumeria/core";
 
-const styles = style.create({
+const styles = css.create({
   base: {
     display: "inline-block",
     fontWeight: "500",
@@ -37,7 +37,7 @@ const styles = style.create({
   bgLightGreen: { backgroundColor: "#e8f5e9" },
 });
 
-const getVariants = style.variants({
+const getVariants = css.variants({
   color: {
     red: styles.red,
     blue: styles.blue,
@@ -91,7 +91,7 @@ const Test = ({
 }: TestProps) => {
   return (
     <div
-      className={style.use(
+      styleName={[
         styles.base,
         getVariants({
           color,
@@ -100,7 +100,7 @@ const Test = ({
           borderRadius,
           background,
         }),
-      )}
+      ]}
     >
       Plumeria Test Component with Dynamic Variants
     </div>
