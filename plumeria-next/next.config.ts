@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { withPlumeria } from "@plumeria/next-plugin/turbopack";
+import { withPlumeria } from "@plumeria/next-plugin";
 import path from "node:path";
 
 const nextConfig: NextConfig = {
